@@ -1,6 +1,12 @@
 
 # SOLID Principles in Java
 
+- **S** – Single Responsibility  
+- **O** – Open/Closed  
+- **L** – Liskov Substitution  
+- **I** – Interface Segregation  
+- **D** – Dependency Inversion
+
 ## ✨ S – Single Responsibility Principle
 
 **Definition:** A class should have only one reason to change.
