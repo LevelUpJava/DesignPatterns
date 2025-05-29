@@ -1,5 +1,5 @@
 
-# 🎥 Java Design Pattern Tutorial: Factory Pattern
+# 🎥 Factory Method Pattern
 
 ## 1. 🎯 Definition
 
