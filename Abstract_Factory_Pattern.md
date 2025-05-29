@@ -1,4 +1,4 @@
-# 🎯 Abstract Factory Pattern – Quick Interview Revision
+# 🎯 Abstract Factory Pattern
 
 ---
 
