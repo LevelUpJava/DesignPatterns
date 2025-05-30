@@ -3,7 +3,7 @@
 
 ## 1. 🎯 Definition
 
-The Factory Design Pattern is a creational pattern that provides a way to create objects without specifying the exact class of the object that will be created.
+The Factory Method Pattern is a creational pattern that provides a way to create objects without specifying the exact class of the object that will be created.
 
 ---
 
@@ -101,7 +101,7 @@ ExecutorService pool = Executors.newFixedThreadPool(5);
 
 ---
 
-## 5. 🌟 Benefits of the Factory Pattern
+## 5. 🌟 Benefits of the Factory Method Pattern
 
 - Loose coupling
 - Centralized creation logic
