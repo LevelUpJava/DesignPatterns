@@ -76,7 +76,7 @@ Calendar calendar = Calendar.getInstance();
 ### 2. `Optional`
 
 ```java
-Optional<String> name = Optional.of("Ashwani");
+Optional<String> name = Optional.of("John");
 Optional<String> empty = Optional.empty();
 ```
 
