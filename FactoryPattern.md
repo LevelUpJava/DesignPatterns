@@ -30,33 +30,44 @@ The Factory Method Pattern is a creational pattern that provides a way to create
 
 ## 4. 📦 Where It’s Used in the JDK
 
-### 1. `Calendar`
+### Calendar
 
 ```java
 Calendar calendar = Calendar.getInstance();
 ```
 
-### 2. `Optional`
+### Collections
 
 ```java
-Optional<String> name = Optional.of("John");
+List<String> list = Collections.singletonList("Java");
+```
+
+### Optional
+
+```java
+Optional<String> name = Optional.of("Ashwani");
 Optional<String> empty = Optional.empty();
 ```
 
-### 3. `Logger`
+### Arrays
+
+```java
+List<Integer> list = Arrays.asList(1, 2, 3);
+```
+
+### Logger
 
 ```java
 Logger logger = Logger.getLogger("MyAppLogger");
 ```
 
-### 4. `DriverManager`
+### DriverManager
 
 ```java
-Connection conn = DriverManager.getConnection(
-  "jdbc:postgresql://localhost:5432/mydb", "user", "password");
+Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/mydb", "user", "password");
 ```
 
-### 5. `Executors`
+### Executors
 
 ```java
 ExecutorService pool = Executors.newFixedThreadPool(5);
