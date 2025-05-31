@@ -11,10 +11,9 @@ The Factory Method Pattern is a creational pattern that provides a way to create
 
 - Loose coupling
 - Centralized creation logic
-- Easy to manage, test, and modify
-- Works well with dependency injection
-- Encourages interface-based design
-
+- Easy to maintain and extend
+- Interface-based design
+- Works with dependency injection
 ---
 
 ## 3. 🔍 Which SOLID Principles Are Used?
