@@ -41,13 +41,13 @@ class IceCreamFactory {
 }
 
 // Step 4: Client
-public class IceCreamParlour {
+public class IceCreamClient {
     public static void main(String[] args) {
-        IceCream ice1 = IceCreamFactory.getIceCream("chocolate");
-        ice1.serve();
+        IceCream chocolateIceCream = IceCreamFactory.getIceCream("chocolate");
+        chocolateIceCream.serve();
 
-        IceCream ice2 = IceCreamFactory.getIceCream("vanilla");
-        ice2.serve();
+        IceCream vanillaIceCream = IceCreamFactory.getIceCream("vanilla");
+        vanillaIceCream.serve();
     }
 }
 ```
