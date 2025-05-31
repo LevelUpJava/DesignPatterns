@@ -7,50 +7,13 @@ The Factory Method Pattern is a creational pattern that provides a way to create
 
 ---
 
-## 2. 💻 Code Example – Ice Cream Analogy
+## 2. 🌟 Benefits of the Factory Method Pattern
 
-```java
-// Step 1: Common interface
-interface IceCream {
-    void serve();
-}
-
-// Step 2: Concrete classes
-class ChocolateIceCream implements IceCream {
-    public void serve() {
-        System.out.println("Serving Chocolate Ice Cream");
-    }
-}
-
-class VanillaIceCream implements IceCream {
-    public void serve() {
-        System.out.println("Serving Vanilla Ice Cream");
-    }
-}
-
-// Step 3: Factory class
-class IceCreamFactory {
-    public static IceCream getIceCream(String type) {
-        if (type.equalsIgnoreCase("chocolate")) {
-            return new ChocolateIceCream();
-        } else if (type.equalsIgnoreCase("vanilla")) {
-            return new VanillaIceCream();
-        }
-        throw new IllegalArgumentException("Unknown Ice Cream Type");
-    }
-}
-
-// Step 4: Client
-public class IceCreamClient {
-    public static void main(String[] args) {
-        IceCream chocolateIceCream = IceCreamFactory.getIceCream("chocolate");
-        chocolateIceCream.serve();
-
-        IceCream vanillaIceCream = IceCreamFactory.getIceCream("vanilla");
-        vanillaIceCream.serve();
-    }
-}
-```
+- Loose coupling
+- Centralized creation logic
+- Easy to manage, test, and modify
+- Works well with dependency injection
+- Encourages interface-based design
 
 ---
 
@@ -101,12 +64,49 @@ ExecutorService pool = Executors.newFixedThreadPool(5);
 
 ---
 
-## 5. 🌟 Benefits of the Factory Method Pattern
+## 5. 💻 Code Example – Ice Cream Analogy
 
-- Loose coupling
-- Centralized creation logic
-- Easy to manage, test, and modify
-- Works well with dependency injection
-- Encourages interface-based design
+```java
+// Step 1: Common interface
+interface IceCream {
+    void serve();
+}
+
+// Step 2: Concrete classes
+class ChocolateIceCream implements IceCream {
+    public void serve() {
+        System.out.println("Serving Chocolate Ice Cream");
+    }
+}
+
+class VanillaIceCream implements IceCream {
+    public void serve() {
+        System.out.println("Serving Vanilla Ice Cream");
+    }
+}
+
+// Step 3: Factory class
+class IceCreamFactory {
+    public static IceCream getIceCream(String type) {
+        if (type.equalsIgnoreCase("chocolate")) {
+            return new ChocolateIceCream();
+        } else if (type.equalsIgnoreCase("vanilla")) {
+            return new VanillaIceCream();
+        }
+        throw new IllegalArgumentException("Unknown Ice Cream Type");
+    }
+}
+
+// Step 4: Client
+public class IceCreamClient {
+    public static void main(String[] args) {
+        IceCream chocolateIceCream = IceCreamFactory.getIceCream("chocolate");
+        chocolateIceCream.serve();
+
+        IceCream vanillaIceCream = IceCreamFactory.getIceCream("vanilla");
+        vanillaIceCream.serve();
+    }
+}
+```
 
 ---
